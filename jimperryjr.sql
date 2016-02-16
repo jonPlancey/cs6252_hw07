@@ -11,13 +11,13 @@ USE
 /*create users*/
 create user dba IDENTIFIED by 'sesame'; -- creates 'dba@%'
 
-gran usasge on *.*
-to artist@localhost
-identfied by 'music2015'
+gran usasge on *.*;
+to artist@localhost;
+identfied by 'music2015';
 
 grant select, insert, update
 on jim_music_albums.*
-to artist
+to artist;
 
 
 
