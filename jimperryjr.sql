@@ -9,6 +9,15 @@ USE
 
 
   
+
+/*create tables*/
+
+CREATE TABLE artist(
+	id_artist		int			not null	primary key		auto_increment,
+	artist_name		varchar(60)	not null
+);
+
+
 /*create tables*/
 
 CREATE TABLE album_title(
@@ -19,14 +28,6 @@ CREATE TABLE album_title(
 	
 	primary key (id_album),
 	foreign key (id_artist) references artist(id_artist)
-);
-
-
-/*create tables*/
-
-CREATE TABLE artist(
-	id_artist	int			not null	primary key		auto_increment,
-	artist_name	varchar(60)	not null
 );
 
 
