@@ -8,22 +8,23 @@ USE
   jim_music_albums;
 
 
+  
 /*create tables*/
 
-CREATE TABLE customers(
+CREATE TABLE album_title(
 
 );
 
 
 /*create tables*/
 
-CREATE TABLE customers(
+CREATE TABLE artist(
 
 );
 
 
 /*create tables*/
 
-CREATE TABLE customers(
+CREATE TABLE album_content (
  
 );
