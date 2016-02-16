@@ -12,7 +12,10 @@ USE
 /*create tables*/
 
 CREATE TABLE album_title(
-
+	id_album	int			not null	primary key		auto_increment,
+	id_artist
+	album_name	varchar(60)	not null,
+	album_date	date		not null
 );
 
 
