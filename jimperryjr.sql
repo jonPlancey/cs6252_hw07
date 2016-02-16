@@ -12,12 +12,12 @@ USE
 /*create tables*/
 
 CREATE TABLE album_title(
-	id_album		int			not null	primary key		auto_increment,
-	id_artist		int			not null	foreign key,
+	id_album		int			not null,
+	id_artist		int			not null,
 	album_name		varchar(60)	not null,
-	album_date		date		not null
+	album_date		date		not null,
 	
-	primary key (id_album, track_number)
+	primary key (id_album),
 	foreign key (id_artist) references artist(id_artist)
 );
 
