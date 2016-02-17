@@ -9,14 +9,17 @@ USE
 
 
 /*create users*/
-create user artist@localhost IDENTIFIED by 'music2015'; 
+--create user artist@localhost identified by 'music2015'; 
 
 grant select, insert, update
 on jim_music_albums.*
-to artist@localhost identfied by 'music2015';
+to 'artist@localhost' identified by 'music2015';
 
-
-  
+/*
+GRANT SELECT, INSERT, UPDATE 
+ON *.* 
+TO 'artist'@'localhost' identified by 'music2015';
+ */ 
 
 /*create tables*/
 
